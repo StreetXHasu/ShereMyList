@@ -28,7 +28,7 @@ export const GuestRoute: FunctionComponent<RouteProps> = (
         <Route
             {...rest}
             render={(props) =>
-                false ? (
+                authenticated ? (
                     <Redirect to={{ pathname: Routes.Default }} />
                 ) : (
                     //@ts-ignore
