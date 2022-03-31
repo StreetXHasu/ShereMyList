@@ -4,10 +4,12 @@ import history from './router/history';
 import { RouteList } from './router/RouteList';
 import { Router } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
+import { MenuAppBar } from './components/MenuAppBar';
 
 const App = observer(() => {
     return (
         <>
+            <MenuAppBar />
             <Router history={history}>
                 <RouteList />
                 <ToastContainer
